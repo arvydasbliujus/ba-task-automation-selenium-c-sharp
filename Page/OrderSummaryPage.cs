@@ -7,7 +7,6 @@ namespace automationpractice.Page
     public class OrderSummaryPage : BasePage
     {
         private IWebElement btnOrderConfirm => Driver.FindElement(By.CssSelector("#cart_navigation > button"));
-        // private IWebElement pageHeading => Driver.FindElement(By.CssSelector(".page-heading > h1"));
         private IWebElement orderStatus => Driver.FindElement(By.CssSelector(".cheque-indent > .dark")); 
         public OrderSummaryPage(IWebDriver webDriver) : base(webDriver) {}
 
